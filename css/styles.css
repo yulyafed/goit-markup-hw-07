@@ -792,6 +792,7 @@ color: #2196F3;
   border-radius: 2px;
   border: 2px solid #212121;
   margin-right: 7px;
+  cursor: pointer;
   
   background-color: #FFFFFF;
 }
@@ -803,8 +804,9 @@ color: #2196F3;
 
   background-color: var(--accent-color);
 }
-.input-check:focus .check-text::before{
-   border: 2px solid #2196F3;
+.input-check:focus + .check-text::before,
+.input-check:hover + .check-text::before{
+   border-color: var(--accent-color);
 } 
 .modal-field-btn{
 position: relative;
