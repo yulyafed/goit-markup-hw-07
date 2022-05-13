@@ -1,0 +1,42 @@
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  outline: 1px solid rgb(224, 34, 145);
+}
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.feature-top__title,
+.work-top__title,
+.team-top__title,
+.clients-top__title {
+font-family: 'Roboto';
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+
+margin-bottom: 50px;
+
+color: var(--bottom-title-color);
+}
+.feature-bottom__title,
+.work-bottom__title{
+font-family: 'Roboto';
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+margin-bottom: 10px;
+}
+.bottom-title--dark{
+ color: var(--second-title-color); 
+}
+.bottom-title--light{
+color: #FFFFFF;
+}
