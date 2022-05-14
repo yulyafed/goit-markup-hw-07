@@ -54,9 +54,8 @@ color: var(--top-btn-color);
 background-color:var(--accent-color) ;
 
 transition: background-color var(--duration) var(--time-function),color var(--duration) var(--time-function);
-}
-
-.hero__btn:hover,
-.hero__btn:focus{
+%:hover,
+%:focus{
 background-color:var(--hover-btn-color) ; 
+}
 }

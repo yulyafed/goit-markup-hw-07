@@ -20,13 +20,13 @@ padding-bottom: 32px;
 
 color: var(--header-color);
 transition: color var(--duration) var(--time-function);
-}
-.nav__link:hover,
-.nav__link:focus {
+&:hover,
+&:focus {
 color:var(--hover-color);
 }
-.nav__link.current{
+&.current{
 color: var(--current-color);
+}
 }
 .nav__link.current::after{
   position: absolute;

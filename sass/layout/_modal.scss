@@ -40,10 +40,10 @@
 
   fill: #000000;
   transition: fill var(--duration) var(--time-function);
-}
-.modal-close:hover,
-.modal-close:focus{
+  &:hover,
+  &:focus{
   fill: var(--accent-color);
+}
 }
 .modal__text{
 font-weight: 700;

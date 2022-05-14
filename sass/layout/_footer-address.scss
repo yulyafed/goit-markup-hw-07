@@ -32,9 +32,9 @@ letter-spacing: 0.03em;
 color: var(--contacts-color);
 
 transition: color var(--duration) var(--time-function);
-
-}
-.address-list__link:hover,
-.address-list__link:focus {
+&:hover,
+&:focus {
   color:var(--hover-color);
 }
+}
+

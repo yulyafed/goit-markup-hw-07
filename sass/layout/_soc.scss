@@ -16,17 +16,18 @@
   background-color: #FFFFFF;
 
   transition: background-color var(--duration) var(--time-function);
-}
-.soc-list__link:hover,
-.soc-list__link:focus{
+  &:hover,
+  &:focus{
   background-color: var(--hover-color);
+}
 }
 .soc-list__icon{
   fill: #AFB1B8;
 
-  transition:fill var(--duration) var(--time-function)
-}
-.soc-list__link:hover .soc-list__icon,
-.soc-list__link:focus .soc-list__icon{
+  transition:fill var(--duration) var(--time-function);
+  .soc-list__link:hover &,
+  .soc-list__link:focus &{
   fill:#FFFFFF ;
 }
+}
+

@@ -63,6 +63,20 @@ body {
   background-color: var(--body-color);
 }
 
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
 p,
 h1,
 h2,
@@ -85,14 +99,6 @@ img {
   height: auto;
 }
 
-.link {
-  text-decoration: none;
-}
-
-.list {
-  list-style: none;
-}
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -106,12 +112,6 @@ img {
   margin: -1px;
 }
 
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
-
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -123,50 +123,6 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.feature-top__title,
-.work-top__title,
-.team-top__title,
-.clients-top__title {
-  font-family: 'Roboto';
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-  color: var(--bottom-title-color);
-}
-
-.feature-bottom__title,
-.work-bottom__title {
-  font-family: 'Roboto';
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-.bottom-title--dark {
-  color: var(--second-title-color);
-}
-
-.bottom-title--light {
-  color: #FFFFFF;
-}
-
-.header {
-  border: 1px solid #ECECEC;
-}
-
-.header .container {
-  display: flex;
-  align-items: center;
-}
-
-.navigation {
-  display: flex;
 }
 
 .logo {
@@ -196,6 +152,19 @@ img {
   color: var(--accent-color);
 }
 
+.header {
+  border: 1px solid #ECECEC;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+}
+
 .nav-list {
   display: flex;
   align-items: center;
@@ -219,8 +188,7 @@ img {
   transition: color var(--duration) var(--time-function);
 }
 
-.nav__link:hover,
-.nav__link:focus {
+.nav__link:hover, .nav__link:focus {
   color: var(--hover-color);
 }
 
@@ -266,8 +234,7 @@ img {
   transition: color var(--duration) var(--time-function);
 }
 
-.list-contacts__link:hover,
-.list-contacts__link:focus {
+.list-contacts__link:hover, .list-contacts__link:focus {
   color: var(--hover-color);
 }
 
@@ -314,21 +281,20 @@ img {
   transition: background-color var(--duration) var(--time-function), color var(--duration) var(--time-function), box-shadow var(--duration) var(--time-function);
 }
 
+.portfolio-btn:hover, .portfolio-btn:focus {
+  border: 1px solid #2196F3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  color: var(--top-btn-color);
+  background-color: var(--hover-color);
+}
+
 .current-btn {
   border: 1px solid #2196F3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   color: var(--top-btn-color);
   background-color: var(--current-color);
-}
-
-.portfolio-btn:hover,
-.portfolio-btn:focus {
-  border: 1px solid #2196F3;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  color: var(--top-btn-color);
-  background-color: var(--hover-color);
 }
 
 .portfolio-list {
@@ -343,17 +309,16 @@ img {
   transition: box-shadow var(--duration) var(--time-function);
 }
 
+.portfolio-link:hover, .portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .portfolio-item {
   display: block;
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
   cursor: pointer;
-}
-
-.portfolio-link:hover,
-.portfolio-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .overlay {
@@ -440,8 +405,7 @@ img {
   transition: color var(--duration) var(--time-function);
 }
 
-.address-list__link:hover,
-.address-list__link:focus {
+.address-list__link:hover, .address-list__link:focus {
   color: var(--hover-color);
 }
 
@@ -478,8 +442,7 @@ img {
   transition: background-color var(--duration) var(--time-function);
 }
 
-.footer-soc-list__link:hover,
-.footer-soc-list__link:focus {
+.footer-soc-list__link:hover, .footer-soc-list__link:focus {
   background-color: var(--hover-color);
 }
 

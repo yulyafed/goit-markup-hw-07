@@ -24,9 +24,9 @@ color: #757575;
   outline: none;
 
   transition: border-color var(--duration) var(--time-function);
-}
-.modal-field__input:focus{
+  &:focus{
   border-color: var(--accent-color);
+}
 }
 .modal-field__icon{
   position: absolute;
@@ -35,9 +35,9 @@ color: #757575;
 
   transform: translateY(-50%);
   transition: fill var(--duration) var(--time-function);
-}
-.modal-field__input:focus + .modal-field__icon{
+  .modal-field__input:focus + &{
   fill: var(--accent-color);
+}
 }
 .modal-area{
   margin-bottom: 20px;
@@ -59,9 +59,9 @@ color: #757575;
   color: rgba(117, 117, 117, 0.5);
 
   transition: border-color var(--duration) var(--time-function);
-}
-.modal-area__input:focus{
+  &:focus{
   border-color: var(--accent-color);
+}
 }
 .modal-check{
   display: flex;
@@ -77,10 +77,6 @@ color: #757575;
 
   background-color: var(--accent-color);
 }
-.modal-check__input:focus + .modal-check__label::before,
-.modal-check__input:hover + .modal-check__label::before{
-   border-color: var(--accent-color);
-} 
 .modal-check__label{
 font-weight: 400;
 font-size: 14px;
@@ -91,6 +87,21 @@ display: flex;
 align-items: center;
 
 color: #757575;
+&::before {
+  content: "";
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  border: 2px solid #212121;
+  margin-right: 7px;
+  cursor: pointer;
+  
+  background-color: #FFFFFF;
+  .modal-check__input:focus + &,
+  .modal-check__input:hover + &{
+   border-color: var(--accent-color);
+} 
+}
 }
 .modal-check__link{
 font-weight: 400;
@@ -102,17 +113,6 @@ text-decoration-line: underline;
 margin-left: 3px;
 
 color: #2196F3;
-}
-.modal-check__label::before {
-  content: "";
-  width: 16px;
-  height: 15px;
-  border-radius: 2px;
-  border: 2px solid #212121;
-  margin-right: 7px;
-  cursor: pointer;
-  
-  background-color: #FFFFFF;
 }
 .modal-btn{
 position: relative;
@@ -136,8 +136,8 @@ color: #FFFFFF;
 background-color:var(--accent-color) ;
 
 transition: background-color var(--duration) var(--time-function);
-}
-.modal-btn:hover,
-.modal-btn:focus{
+&:hover,
+&:focus{
   background-color: #188CE8;
+}
 }

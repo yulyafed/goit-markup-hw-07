@@ -18,17 +18,17 @@
   background-color: #FFFFFF;
 
   transition: background-color var(--duration) var(--time-function);
-}
-.logo-list__link:hover,
-.logo-list__link:focus{
+  &:hover,
+  &:focus{
   border-color: var(--accent-color);
+}
 }
 .logo-list__icon{
   fill: #AFB1B8;
 
   transition: fill var(--duration) var(--time-function);
-}
-.logo-list__link:hover .logo-list__icon,
-.logo-list__link:focus .logo-list__icon{
+  .logo-list__link:hover &,
+  .logo-list__link:focus &{
   fill:var(--hover-color);
+}
 }

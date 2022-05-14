@@ -1,19 +1,26 @@
 @import "./utils/variables";
+@import "./base/common";
 @import "./base/rezet";
-@import "./utils/utilities";
-@import "./components/repeat";
-@import "./components/page-header";
+@import "./utils/vh";
+
+@import "./components/container";
+@import "./components/section";
 @import "./components/logo";
-@import "./components/nav";
-@import "./components/contacts";
-@import "./components/hero";
-@import "./components/feature";
-@import "./components/work";
-@import "./components/team";
-@import "./components/soc";
-@import "./components/clients";
-@import "./components/footer-address";
-@import "./components/footer-soc";
-@import "./components/footer-form";
-@import "./components/modal";
-@import "./components/modal-form";
+@import "./components/top-title";
+@import "./components/bottom-title";
+
+
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/contacts";
+@import "./layout/hero";
+@import "./layout/feature";
+@import "./layout/work";
+@import "./layout/team";
+@import "./layout/soc";
+@import "./layout/clients";
+@import "./layout/footer-address";
+@import "./layout/footer-soc";
+@import "./layout/footer-form";
+@import "./layout/modal";
+@import "./layout/modal-form";
