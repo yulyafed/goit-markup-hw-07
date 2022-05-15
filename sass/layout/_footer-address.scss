@@ -11,13 +11,15 @@
 .address-list{
   font-style: normal;
 }
+.top-address{
+margin-top: 20px;
+}
 .address{
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 
 margin-bottom: 9px;
-margin-top: 20px;
 
 color:var(--address-color);
 }

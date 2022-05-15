@@ -36,10 +36,9 @@ color:var(--hover-color);
   fill: var(--top-text-color);
 }
 .list-contacts__link:hover .icon-envelope,
-.list-contacts__link:focus .icon-envelope{
-fill:var(--hover-color);
-}
+.list-contacts__link:focus .icon-envelope,
 .list-contacts__link:hover .icon-smartphone,
 .list-contacts__link:focus .icon-smartphone{
 fill:var(--hover-color);
 }
+
