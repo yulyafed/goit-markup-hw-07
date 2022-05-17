@@ -34,8 +34,8 @@ color: var(--top-title-color);
 }
 .hero__btn { 
 transition: background-color var(--duration) var(--time-function),color var(--duration) var(--time-function);
-%:hover,
-%:focus{
+&:hover,
+&:focus{
 background-color:var(--hover-btn-color) ; 
 }
 }
